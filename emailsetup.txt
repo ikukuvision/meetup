@@ -1,0 +1,7 @@
+from flask_mail import Message
+from APP import mail
+msg = Message('flaskMessageSend', sender=app.config['ADMINS'][0],
+recipients=['ikukuvision@gmail.com', 'flask_testing@ikukuvision.com'])
+msg.body = 'IkukuVision Presents'
+msg.html = '<h1>Final tests before i move on to the facelist section</h1>'
+mail.send(msg)
