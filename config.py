@@ -19,4 +19,4 @@ class Config(object):
     ADMINS = ['flask_testing@ikukuvision.com']
     LANGUAGES = ['en', 'es']
     MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
-    POSTS_PER_PAGE = 25
+    POSTS_PER_PAGE = 10
