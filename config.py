@@ -20,3 +20,4 @@ class Config(object):
     LANGUAGES = ['en', 'es']
     MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
     POSTS_PER_PAGE = 10
+    REDIS_URL = os.environ.get('REDIS_URL') or 'redis://'
